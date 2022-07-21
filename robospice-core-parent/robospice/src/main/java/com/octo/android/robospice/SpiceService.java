@@ -130,6 +130,8 @@ public abstract class SpiceService extends Service {
 
         notification = createDefaultNotification();
 
+        startForeground(1, notification);
+
         isCreated = true;
         Ln.d("SpiceService instance created.");
     }
